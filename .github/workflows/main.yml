@@ -40,10 +40,8 @@ jobs:
     - name: Run tests
       run: npm run prod
 
-    - name: List report folder (debug) 
-      run: ls -R ./report
-
     - name: Upload reports
+      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: cucumber-report
