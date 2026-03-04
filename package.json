@@ -1,0 +1,20 @@
+{
+  "name": "amaysim-web-automation",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^9.24.0",
+    "@wdio/cucumber-framework": "^9.24.0",
+    "@wdio/local-runner": "^9.24.0",
+    "@wdio/spec-reporter": "^9.24.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "wdio-cucumberjs-json-reporter": "^6.0.1"
+  },
+  "scripts": {
+    "prod": "cross-env TEST_ENV=PROD wdio run ./wdio.conf.js",
+    "sit": "cross-env TEST_ENV=SIT wdio run ./wdio.conf.js",
+    "stg": "cross-env TEST_ENV=STG wdio run ./wdio.conf.js",
+    "uat": "cross-env TEST_ENV=UAT wdio run ./wdio.conf.js"
+  }
+}
