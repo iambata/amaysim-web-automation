@@ -84,7 +84,7 @@ When('the user enter a credit card number that will be Declined', async () => {
 
     // need to update the code to locate iframe elements. :(((
     await Common.scrollToElement(SevenDaySimPlanPage.cardPaymentMethodButton);
-    await Common.clickElement(SevenDaySimPlanPage.cardPayment);
+    await Common.clickElement(SevenDaySimPlanPage.cardPaymentMethodButton);
 
     // Enter Card Details
     await Common.scrollToElement(SevenDaySimPlanPage.cardNumberField);
