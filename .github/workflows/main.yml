@@ -10,7 +10,7 @@ on:
       environment: 
         description: "Which environment to run tests against" 
         required: true 
-        default: "PROD"
+        default: "prod"
         type: choice 
         options: 
           - prod 
