@@ -57,7 +57,7 @@ export const config = {
     capabilities: [{
         browserName: 'chrome',
         'goog:chromeOptions': {
-            args: ['--disable-gpu', 'window-size=1200,900'],
+            args: ['--headless', '--disable-gpu', 'window-size=1200,900'],
         },
         'wdio-ics:options': {
             logName: 'chrome',
