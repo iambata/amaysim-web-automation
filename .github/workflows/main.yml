@@ -10,6 +10,21 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      PROD_URL: ${{ secrets.PROD_URL }} 
+      SIT_URL: ${{ secrets.SIT_URL }}
+      STG_URL: ${{ secrets.STG_URL }} 
+      UAT_URL: ${{ secrets.UAT_URL }} 
+      FIRST_NAME: ${{ secrets.FIRST_NAME }} 
+      LAST_NAME: ${{ secrets.LAST_NAME }} 
+      EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }} 
+      DATE_OF_BIRTH: ${{ secrets.DATE_OF_BIRTH }} 
+      ADDRESS: ${{ secrets.ADDRESS }} 
+      PASSWORD: ${{ secrets.PASSWORD }} 
+      CONTACT_NUMBER: ${{ secrets.CONTACT_NUMBER }} 
+      INVALID_CARD_NUMBER: ${{ secrets.INVALID_CARD_NUMBER }} 
+      EXPIRATION_DATE: ${{ secrets.EXPIRATION_DATE }} 
+      CVV: ${{ secrets.CVV }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
