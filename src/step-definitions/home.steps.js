@@ -94,8 +94,6 @@ When('the user enter a credit card number that will be Declined', async () => {
     await Common.scrollToElement(SevenDaySimPlanPage.securityCodeField);
     await Common.enterValue(SevenDaySimPlanPage.securityCodeField, cvv);
 
-    await browser.pause(15000)
-
     await Common.takeScreenshot();
 });
 
